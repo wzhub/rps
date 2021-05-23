@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="rps_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="center" text="🤖️" textAlignment="center" id="o2L-Oc-Sdb">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="zFa-ww-18Q">
+                                    <connections>
+                                        <action selector="labelTapped:" destination="AgC-eL-Hgc" id="hyp-Ec-Zjl"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <label width="1" alignment="center" text="------------------------------------------------------------" textAlignment="center" numberOfLines="3" id="hwU-Gh-TEP">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="Wiy-er-ihG">
+                                    <connections>
+                                        <action selector="labelTapped:" destination="AgC-eL-Hgc" id="UAf-us-p99"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="1" alignment="center" text="-" textAlignment="center" id="hD1-rZ-1oL">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="ihX-0K-Slt">
+                                    <connections>
+                                        <action selector="labelTapped:" destination="AgC-eL-Hgc" id="iP1-kG-DQN"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                        </label>
+                        <group width="1" alignment="left" id="amz-Ip-iEN">
+                            <items>
+                                <button alignment="center" verticalAlignment="center" title="✌️" id="2Fm-gi-qb9">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="scissorsButtonPushed" destination="AgC-eL-Hgc" id="ZSQ-H1-vRI"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" verticalAlignment="center" title="🖐️" id="2Gn-ig-2H7">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="paperButtonPushed" destination="AgC-eL-Hgc" id="hbC-jJ-Rd9"/>
+                                    </connections>
+                                </button>
+                                <button alignment="center" verticalAlignment="center" title="✊" id="NjP-bd-chg">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                    <connections>
+                                        <action selector="rockButtonPushed" destination="AgC-eL-Hgc" id="xkk-q9-gGG"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="humanSignLabel" destination="hD1-rZ-1oL" id="wk7-Xv-VBS"/>
+                        <outlet property="paperButton" destination="2Gn-ig-2H7" id="WI6-6P-UrU"/>
+                        <outlet property="robotSignLabel" destination="o2L-Oc-Sdb" id="7Ln-Uj-ywR"/>
+                        <outlet property="rockButton" destination="NjP-bd-chg" id="bYV-ri-9lX"/>
+                        <outlet property="scissorsButton" destination="2Fm-gi-qb9" id="LbO-49-9kK"/>
+                        <outlet property="scoreBoard" destination="hwU-Gh-TEP" id="X3v-VC-oUT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-20"/>
+        </scene>
+    </scenes>
+</document>
